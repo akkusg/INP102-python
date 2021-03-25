@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bize Yazın!</title>
+</head>
+<body>
+    <form action="/mesajkaydet" method="post">
+        <p>
+          <label for="adsoyad">Adınız Soyadınız:</label><br>
+          <input type="text" id="adsoyad" name="adsoyad">
+        </p>
+        <p>
+          <label for="eposta">E-posta:</label><br>
+          <input type="text" id="eposta" name="eposta">
+        </p>
+        <p>
+          <label for="telefon">Telefon:</label><br>
+          <input type="text" id="telefon" name="telefon">
+        </p>
+        <p>
+          <label for="mesaj">Mesajınız:</label><br>
+            <textarea id="mesaj" name="mesaj" rows="10" cols="30">
+            </textarea>
+        </p>
+
+        <input style="color:blue" type="submit" value="Gönder">
+
+    </form>
+</body>
+</html>
