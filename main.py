@@ -12,7 +12,8 @@ def baslangic():
 @app.route('/egitim')
 def egitim_bilgileri():
     ilkokulum = "Yüzüncü Yıl " + "İlkokulu"
-    return render_template("egitim.html", ilkokul=ilkokulum)
+    okullarim = ["Muğla Anadolu Lisesi", "Ege Üniversitesi", "Boğaziçi Üniversitesi", "Trakya Üniversitesi"]
+    return render_template("egitim.html", ilkokul=ilkokulum, okullarim=okullarim)
 
 
 @app.route('/isdeneyimi')

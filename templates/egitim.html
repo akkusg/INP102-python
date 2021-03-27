@@ -5,6 +5,12 @@
     <h2>Eğitim Bilgileri</h2>
 
     <h3>İlkokulum: {{ ilkokul }}<h3>
+    <ol>
+    {%for okul in okullarim%}
+        <li>{{okul}}</li>
+    {%endfor%}
+      
+    </ol>
 
 
     <table border style="width: 50%;">
